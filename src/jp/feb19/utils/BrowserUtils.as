@@ -12,9 +12,6 @@ package jp.feb19.utils
 		{
 		}
 		
-		/**
-		 * BrowserUtilitiesが利用可能かどうか
-		 */
 		public static function get enabled():Boolean
 		{
 			//ドメインベースのサンドボックス下かどうか
@@ -61,9 +58,6 @@ package jp.feb19.utils
 			}
 		}
 		
-		/**
-		 * ExternalInterfaceをラップするJavaScriptコール関数
-		 */
 		public static function call(funcName:String, ... args:Array):String
 		{
 			if (!enabled)
@@ -80,7 +74,7 @@ package jp.feb19.utils
 		 */
 		public static function alert(... messages:Array):void
 		{
-			trace.apply(null, messages);
+//			trace.apply(null, messages);
 			call( "function() { alert('" + messages.join( " " ) + "'); } " );
 		}
 		
