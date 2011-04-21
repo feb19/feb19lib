@@ -3,6 +3,7 @@ package
 	import flash.display.Sprite;
 	import flash.text.TextField;
 	
+	import jp.feb19.net.MultipleLoader;
 	import jp.feb19.utils.ArrayUtils;
 	import jp.feb19.utils.ButtonUtils;
 	import jp.feb19.utils.ColorUtils;
