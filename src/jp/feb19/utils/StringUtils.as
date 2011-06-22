@@ -14,7 +14,7 @@ package jp.feb19.utils
 		 */
 		public static function ignoreWhite(string:String):String
 		{
-			return StringUtilities.ignoreLetter(string, " ");
+			return StringUtils.ignoreLetter(string, " ");
 		}
 
 		/**
